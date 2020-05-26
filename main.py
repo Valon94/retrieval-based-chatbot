@@ -1,3 +1,4 @@
+import random
 from tensorflow import keras
 import json
 import numpy
@@ -88,6 +89,37 @@ def create_model(training, output):
     return model
 
 
+def chat(model, labels_dict, pattern_vocab):
+    print("You can chat with the bot now!")
+    while True:
+        inp = input("Chat: ")
+
+        if str(inp) == '':
+            print("Bot: Say something!")
+        else:
+            if inp.lower() == 'quit':
+                break
+
+            word_vec = CountVectorizer(
+                binary=True, vocabulary=pattern_vocab, tokenizer=tokenize_stem)
+            input_dict = [inp]
+            matrix = word_vec.fit_transform(input_dict)
+
+            results = model.predict([matrix.todense()])[0]
+            # print(results)
+            results_index = numpy.argmax(results)
+            tag = labels_dict[results_index]
+
+            if results[results_index] > 0.8:
+                for tg in dataset["data"]:
+                    if tg['tag'] == tag:
+                        responses = tg['responses']
+
+                print("Bot: "+random.choice(responses))
+            else:
+                print("Sorry, I dont understand")
+
+
 lang = input("\n Select language (english or albanian): ")
 
 # Load dataset
@@ -97,8 +129,13 @@ with open('conversation_dataset/'+lang+'_dataset.json') as file:
 try:
     labels_dict, pattern_vocab = load_data(dataset, lang)
     loaded_model = keras.models.load_model("keras_models/"+lang+"_model.h5")
+    command = input("\nModel already exists! Do you wanna chat? (y/n): ")
+
+    if command.lower() == 'y':
+        chat(loaded_model, labels_dict, pattern_vocab)
 except:
     labels_dict, pattern_vocab, input_x, input_y = generate_data(dataset, lang)
     model = create_model(input_x, input_y)
     model.fit(input_x, input_y, epochs=500, batch_size=8)
     model.save("keras_models/"+lang+"_model.h5")
+    chat(model, labels_dict, pattern_vocab)
