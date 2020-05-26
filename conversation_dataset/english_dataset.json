@@ -1,0 +1,149 @@
+{"data": [
+    {"tag": "greeting",
+     "patterns": ["Hi","Is anyone there?", "Hello", "Good day", "Whats up","hey","pronto"],
+     "responses": ["Hello!", "Hey!", "Hi!"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Ciao", "See you later", "Goodbye", "I am Leaving", "Have a Good day","bye","bye bye","arrivederci"],
+     "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+    },
+    {"tag": "name",
+     "patterns": ["whats your name", "what is your name","your name?","what was your name again"],
+     "responses": ["My name is ", "I'm ","I am ", ""]
+    },
+    {"tag": "wellness",
+     "patterns": ["how are you?", "are you ok?"],
+     "responses": ["Great, how about you?", "Very well thanks, you?","Good, you?", "I'm great thanks, you?"]
+    },
+    {"tag": "question",
+     "patterns": ["can I ask you some questions?", "can i ask u a question","can i ask you something?","can I ask you a series of questions?"],
+     "responses": ["Of course, go ahead.", "Of course!","Why not, go ahead!", "Ofc"]
+    },
+    {"tag": "agree",
+     "patterns": ["Agree", "I fully agree with you", "I agree with you","I agree","you are right"],
+     "responses": [":)",":-)",";)"]
+    },
+    {"tag": "disagree",
+     "patterns": ["I dont agree", "I do not agree with you", "Dont agree","I dont agree with you","I don't agree with you","I dont agree with you fully"],
+     "responses": ["Why? :(","Why though?","Can I know why?","Could you elaborate please?"]
+    },
+    {"tag": "wellness-response",
+     "patterns": ["Im very good thanks", "Im doing good", "Im doing great thank you"],
+     "responses": ["Great", "Good to hear it", "Good", "Glad to hear it"]
+    },
+    {"tag": "wellness-response-bad",
+     "patterns": ["Im not good", "Hanging on", "Im not doing great"],
+     "responses": ["Why, whats wrong?", "What's wrong?","Can I help you somehow?"]
+    },
+    {"tag": "camera",
+     "patterns": ["can you turn the camera on", "why isn't your camera on", "could you please turn on your camera","I can not see you","I can't see you"],
+     "responses": ["Sorry, but my camera isn't working.", "Unfourtunately my camera isn't working.","Something is wrong with my camera, sorry.","The camera on my device is broken."]
+    },
+    {"tag": "microphone",
+     "patterns": ["can you turn the microphone on", "why isn't your audio on", "could you please turn on your microphone","why are you muted","I can not hear you","i can't hear you"],
+     "responses": ["Something is wrong with my microphone! I can't turn it on!", "The mic is broken!","Im sorry but the mic on this device is broken","Sorry, I can't seem to make the mic work."]
+    },
+    {"tag": "cyber-security",
+     "patterns": ["what is cyber security", "are you familiar with cyber security"],
+     "responses": ["It is the protection of computer systems and networks from the theft of or damage to hardware or software.", "Cybersecurity is the practice of protecting systems, networks, and programs from attacks."]
+    },
+    {"tag": "authentication",
+     "patterns": ["what is authentication", "do you know anything about authentication", "could you please tell me something about authentication"],
+     "responses": ["Authentication is the act of verifying a claim of identity.", "Authentication is the security process that validates the claimed identity of an entity"]
+    },
+    {"tag": "confidentiality",
+     "patterns": ["what is confidentiality", "could you give me an answer about confidentiality"],
+     "responses": ["Confidentiality refers to protecting information from being accessed by unauthorized parties..", "Confidentiality measures are designed to protect against unauthorized disclosure of information."]
+    },
+    {"tag": "integrity",
+     "patterns": ["what is integrity", "what could you tell me about integrity"],
+     "responses": ["Integrity refers to ensuring the authenticity of information, that information is not altered.", "Integrity means assuring that the source of the information is genuine, and the data haven't been somehow altered."]
+    },
+    {"tag": "encryption",
+     "patterns": ["what is encryption", "what could you tell me about encryption"],
+     "responses": ["Encryption is the process of encoding a message or file so that it can be only read by certain people","It is the process of encoding information with the purpose of protecting data"]
+    },
+    {"tag": "decryption",
+     "patterns": ["what is decryption", "what could you tell me about decryption"],
+     "responses": ["Decryption is the process of converting the encrypted or encoded data into the original form","It is the process of converting the encrypted data into plaintext"]
+    },
+    {"tag": "rsa",
+     "patterns": ["have you heard of rsa", "what is rsa", "could you elaborate rsa"],
+     "responses": ["RSA is an asymmetric encryption algorithm, with two different keys used for encryption.", "RSA is one of the first public-key cryptosystems and is widely used for secure data transmission."]
+    },
+    {"tag": "rsa-key",
+     "patterns": ["what is the key size of rsa", ""],
+     "responses": ["Typical RSA key sizes are 1,024 or 2,048 or 4,096 bits.", "Authentication is the security process that validates the claimed identity of an entity"]
+    },
+    {"tag": "ssl",
+     "patterns": ["what is ssl", "why do we use ssl", "are you familiar with ssl"],
+     "responses": ["SSL is a standard security technology for establishing an encrypted link between a server and a client.", "SSL or Secure Sockets Layer is a security technology used for encrypting the communication between a server and a client"]
+    },
+    {"tag": "X.509",
+     "patterns": ["what is X.509", "describe X.509 certificates", "what do you know about X.509 certificates"],
+     "responses": ["X.509 certificate is a digital certificate that uses the widely accepted international X. 509 public key infrastructure.", "X.509 is a standard defining the format of public key certificates. X.509 certificates are used in many Internet protocols like TLS/SSL."]
+    },
+    {"tag": "pkcs",
+     "patterns": ["what are pkcs", "have you heard of pkcs standards", "what are pkcs specifications"],
+     "responses": ["PKCS are a group of specifications developed with the aim of accelerating the deployment of algorithms featuring two separate keys.", "PKCS are specifications published by RSA Security, dedicated for encryption algorithms that use two keys."]
+    },
+    {"tag": "des-vs-rsa",
+     "patterns": ["Why are asymmetric encryption algorithm keys larger than symmestric ones", "why are the keys of symmetric encryption algorithms smaller than the asymemtric algorithms"],
+     "responses": ["Because the larger the keys in assymetric algorithms, the harder the factorisation of the keys.", "Because these algorithms are built upon different mathematical constructs, and the larger the key for asymentric, the larger is the resistance to factorization"],
+     "context_set": ""
+    },
+    {"tag": "rsa-encryption",
+     "patterns": ["could you tell me the encryption formula for rsa", "what is the rsa encryption formula"],
+     "responses": ["c=m^e mod n", "Yes, it is c=m^e mod n"]
+    },
+    {"tag": "rsa-decryption",
+     "patterns": ["what is the decryption formula for rsa", "do you know the decryption formula for rsa"],
+     "responses": ["Yes, it is m=c^d mod n.", "m=c^d mod n"]
+    },
+    {"tag": "pgp",
+     "patterns": ["What is PGP", "Could you elaborate PGP"],
+     "responses": ["PGP is used for signing, encrypting, and decrypting texts, e-mails, files, directories etc.", "PGP stands for 'Pretty Good Privacy,' and it has been one of the dominant forms of end-to-end encryption."]
+    },
+    {"tag": "hash",
+     "patterns": ["what is a hash function", "have you heard of hash functions"],
+     "responses": ["Is any function that can be used to map data of arbitrary size to fixed-size values.", "Are one way functions that map data of arbitrary size to fixed-size values."]
+    },
+    {"tag": "one-way-function",
+     "patterns": ["One way function properties? ", "do you know any one way function property"],
+     "responses": ["Hmm, they are collision resistant.", "It is very difficult to compute their inverse functions."]
+    },
+    {"tag": "salted-hash",
+     "patterns": ["How are passwords stored in databases", "how would you store a password in your database"],
+     "responses": ["Passwords should be stored as a Salted Password Hash ", "Salted Password Hashes should be used."],
+     "context_set": ""
+    },
+    {"tag": "XSS",
+     "patterns": ["what is cross site scripting","what are XSS attacks", "have you heard of cross site scripting or XXS"],
+     "responses": ["XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users.", "They are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites."]
+    },
+    {"tag": "sql-injections",
+     "patterns": ["how do we prevent sql injections?", "what could we do to prevent sql injections?"],
+     "responses": ["We could escape and sanitize inputs, use parameterized statements...", "They can be prevented with the usage of parameterized statements, escaping inputs etc."]
+    },
+    {"tag": "iv",
+     "patterns": ["what is the use of the IV or initial vector in the CBC mode?", "what is the role of the IV or initial vector in the cbc mode"],
+     "responses": ["It makes the encrypted blocks of data be unique", "Because of the it the encrypted blocks of data are unique"]
+    },
+    {"tag": "des",
+     "patterns": ["what is des or data encryption standard", "could you tell me something about des or data encryption standard"],
+     "responses": ["It is a symmetric-key algorithm for the encryption of data with a key size of 56 bits.", "DES is an encryption algorithm that has a key size of 56 bits."]
+    },
+    {"tag": "aes",
+     "patterns": ["what is aes or advanced encryption standard", "describe aes or advanced encryption standard", "could you tell me something about aes or advanced encryption standard"],
+     "responses": ["AES is a symmetric block cipher with key lengths of 128, 192, and 256 bits.", "AES is a symmetric encryption algorithm that supports a block length of 128 bits and key lengths of 128, 192, and 256 bits."]
+    },
+    {"tag": "des-key",
+     "patterns": ["what are the supported des or data encryption standard key lengths", "des or data encryption standard key lengths"],
+     "responses": ["128, 192, and 256 bits", "Its supports 128, 192, and 256 bits."]
+    },
+    {"tag": "diffie-hellman",
+     "patterns": ["what is dhm or diffie hellman", "have you heard of diffie hellman merkle","what is diffie hellman key exchange"],
+     "responses": ["DHM is a method of securely exchanging cryptographic keys over a public channel.", "It is used to securely exchange cryptographic keys."]
+    }
+]
+}

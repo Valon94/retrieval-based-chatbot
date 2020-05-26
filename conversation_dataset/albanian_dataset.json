@@ -1,0 +1,183 @@
+{"data": [
+    {"tag": "greeting",
+     "patterns": ["Pershendetje","ckemi", "qkemi", "çkemi", "hello","hey","hi"],
+     "responses": ["Pershendetje!","Pershendetje juve", "Ckemi", "Tungjatjeta"],
+     "context_set": ""
+    },
+    {"tag": "goodbye",
+     "patterns": ["Tung tung", "Kalo mire", "Kalofshi mire", "Gjitha te mirat", "klm","bye","bye bye","tung"],
+     "responses": ["Tung", "Klm", "Kalo mire","Ciao"],
+     "context_set": ""
+    },
+    {"tag": "name",
+     "patterns": ["Si quheni", "Si e keni emrin", "qysh e ki emrin", "qysh e ke emrin","qysh quhesh","si quhesh","si e ke emrin","a mund te me tregosh emrin"],
+     "responses": ["", "Quhem ","Emrin e kam "],
+     "context_set": ""
+    },
+    {"tag": "wellness",
+     "patterns": ["Si jeni?", "A je mire", "A jeni mire", "Ju si jeni","si je","si po kalon","qysh je"],
+     "responses": ["Mire faleminderit, po juve?", "Bukur, ju si jeni?"],
+     "context_set": ""
+    },
+    {"tag": "question",
+     "patterns": ["a mund te te pyes diqka?", "a mund ta beje nje pyetje?","a muj me te pyt diqka?","mund te ta beje nje pyetje?","mund te te pyes?"],
+     "responses": ["Gjithsesi", "Patjeter","Urdhero", "Po"],
+     "context_set": ""
+    },
+    {"tag": "agree",
+     "patterns": ["Pajtohem", "Pajtohem me juve", "Pajtohem plotesisht","sakte"],
+     "responses": [":)",":-)",";)"],
+     "context_set": ""
+    },
+    {"tag": "disagree",
+     "patterns": ["Nuk pajtohem", "me vjen keq por nuk pajtohem me juve", "nuk pajtohem me juve","nuk pajtohem plotesisht me juve","nuk eshte e sakte"],
+     "responses": ["Pse? :(","Perse?","A mund te di perse?","A mund ta di pse?"],
+     "context_set": ""
+    },
+    {"tag": "wellness-response",
+     "patterns": ["Mire", "Mire jemi", "Mire pra"],
+     "responses": ["Mire shume", "Me vjen mire","Shume mire","Ne rregull"],
+     "context_set": ""
+    },
+    {"tag": "wellness-response-bad",
+     "patterns": ["Nuk jam mire", "Hmm sdi qte them", "sdi qte them"],
+     "responses": ["Pse?", "Perse?","A mund te te ndihmoje disi"],
+     "context_set": ""
+    },
+    {"tag": "camera",
+     "patterns": ["a mund ta leshosh kameren", "a mund ta ndezesh kameren", "pse kamera juaj nuk eshte e ndezur","pse nuk po te shoh"],
+     "responses": ["Me vjen keq, por kamera nuk eshte funksionale", "Fatkeqesisht kamera nuk eshte funksionale","Diqka nuk eshte ne rregull me kameren time","Kamera nuk po funksionin, me vjen keq"],
+     "context_set": ""
+    },
+    {"tag": "microphone",
+     "patterns": ["a mund ta leshosh mikrofonin", "a mund ta leshosh zerin", "nuk po ndegjohesh","a mund ta ndezesh mikrofonin", "pse mikrofoni juaj nuk eshte e ndezur","pse nuk po te ndegjoj"],
+     "responses": ["Mikrofoni nuk eshte funksional, me vjen keq!", "Fatkeqesisht mikrofoni nuk eshte funksional ne pajisjen time","Me eshte prishur mikrofoni ne pajisjen time, me vjen keq."],
+     "context_set": ""
+    },
+    {"tag": "cyber-security",
+     "patterns": ["çfare eshte siguria e te dhenave", "cfare eshte siguria e te dhenave","qfare eshte siguria e te dhenave","cka eshte siguria e te dhenave","çka eshte siguria e te dhenave"],
+     "responses": ["Paraqet mbrojtjen e te dhenave apo sistemeve kompjuterike, nga sulmet kibernetike me qellim te vjedhjes se te dhenave apo shkaktimin e demeve... ", "Paraqet mbrojtjen e te dhenave nga veprimet e demshme te personave te paautorizuar, nga sulmet kibernetike apo te ashtuquajturat data breach"],
+     "context_set": ""
+    },
+    {"tag": "authentication",
+     "patterns": ["çfare eshte autentifikimi", "qfare eshte autentifikimi", "cfare eshte autentifikimi","cka eshte autentifikimi","çka eshte autentifikimi"],
+     "responses": ["Autentifikimi paraqet aktin e verifikimit te identitetin te pretenduar te pales komunikuese.", "Paraqet procesin e validimit te identitetit te pretenduar te pales tjeter komunikuese"],
+     "context_set": ""
+    },
+    {"tag": "confidentiality",
+     "patterns": ["çfare eshte konfidencialiteti", "qfare eshte konfidencialiteti", "cfare eshte konfidencialiteti","cka eshte konfidencialiteti","çka eshte konfidencialiteti"],
+     "responses": ["Konfidencialiteti i referohet mbrojtjes se te dhenave nga aksesi i paautorizuar", "Paraqet masat e dizajnuara per mbrojtjen e informacionit nga aksesi i paautorizuar"],
+     "context_set": ""
+    },
+    {"tag": "integrity",
+     "patterns": ["çfare eshte integriteti", "qfare eshte integriteti", "cfare eshte integriteti","cka eshte integriteti","çka eshte integriteti"],
+     "responses": ["Integriteti i referohet garantimit te autenticitetit te informacionit, dhe se informacioni nuk eshte ndryshuar", "Integriteti paraqet garantimin qe burimi i informacionit eshte i besueshem, dhe se informacioni nuk eshte ndryshuar nga nje pale e trete"],
+     "context_set": ""
+    },
+    {"tag": "encryption",
+     "patterns": ["çfare eshte enkriptimi", "qfare eshte ekriptimi", "cfare eshte enkriptimi","cka eshte enkriptimi"],
+     "responses": ["Enkriptimi paraqet procesin e enkodimit te informacionit me qellim te mbrojtjes se te dhenave", "Paraqet procesin e enkodimit te nje mesazhi apo fajlli ne menyre qe ato te mbrohen"],
+     "context_set": ""
+    },
+    {"tag": "decryption",
+     "patterns": ["çfare eshte dekriptimi", "qfare eshte dekriptimi", "cfare eshte dekriptimi","cka eshte dekriptimi"],
+     "responses": ["Dekriptimi paraqet procesin e konvertimit te informacionit te enkriptuar ne gjendjen origjinale e te lexueshme", "Paraqet procesin e konvertimit te informacionit te enkriptuar ne plaintext"],
+     "context_set": ""
+    },
+    {"tag": "rsa",
+     "patterns": ["çfare eshte rsa", "qfare eshte rsa", "cfare eshte rsa","a mund te na tregosh diqka per rsa enkriptimin"],
+     "responses": ["RSA eshte nje algoritem asimetrik i enkriptimit, ku perdor dy qelsa te ndryshem", "Eshte nje nga public-key enkriptimet e para, eshte algoritem asimetrik dhe i cili ka perdorim te gjere"],
+     "context_set": ""
+    },
+    {"tag": "rsa-key",
+     "patterns": ["Cila eshte madhesia e celesit tek rsa algoritmi", "sa eshte gjatesia e celesit tek rsa algoritmi"],
+     "responses": ["Madhesite tipike jane 1024, 2048 apo 4096 bit", "1024, 2048 apo 4096 bit"],
+     "context_set": ""
+    },
+    {"tag": "ssl",
+     "patterns": ["çfare eshte ssl", "qfare eshte ssl", "cfare eshte ssl", "pse e perdorim ssl", "di diqka per ssl","cka eshte ssl","çka eshte ssl"],
+     "responses": ["Paraqet nje standard per krijimin e nje lidhje komunikimi te sigurte mes serverit dhe klientit", "SSL apo Secure Sockets Layer paraqet nje teknologji per enkriptimin e komunikimit mes serverit dhe klientit"],
+     "context_set": ""
+    },
+    {"tag": "X.509",
+     "patterns": ["çfare jane X.509 certifikatat", "qfare jane X.509 certifikatat", "cfare jane X.509 certifikatat", "pershkruaj X.509 certifikatat","cka jane X.509 certifikatat","çka jane X.509 certifikatat"],
+     "responses": ["X.509 certifikatat jane certifikata digjitale qe kane perdorim te gjere, dhe perdorin infrastrukturen X.509 me celes publik", "X.509 eshte nje standard qe definon formatin e ketyre certifikatave digjitale, qe perdorin per protokole te ndryshme te komunikimit si TLS/SSL etj."],
+     "context_set": ""
+    },
+    {"tag": "pkcs",
+     "patterns": ["çfare jane pkcs standardet", "qfare jane pkcs standardet", "cfare jane pkcs standardet", "pershkruaj pkcs standardet","cka jane pkcs standardet","çka jane pkcs standardet"],
+     "responses": ["Paraqesin nje grup standartesh per public-key algoritmet e enkriptimit te publikuara nga RSA Security", "Jane specifikime te publikuara nga RSA Security, qe dedikohen per algoritmet enkriptuese qe perdorin dy celesa","Paraqesin nje grup standartesh per public-key algoritmet e enkriptimit"],
+     "context_set": ""
+    },
+    {"tag": "des-vs-rsa",
+     "patterns": ["Pse te enkriptimi asimetrik gjatesia e celesit eshte shume me e madhe se tek algoritmi simetrik?", "Pse tek algoritmet simetrike gjatesia e qelesit eshte me e vogel se tek algorimet asimetrike"],
+     "responses": ["Per shkak se sa me e madhe gjatesia e celesit tek algoritmet asimetrike, rritet rezistenca ndaj faktorizimi i tyre", "Per shkak se keto algoritmet jane te ndertuara ne konstrukte matematikore te ndryshme, ku tek algoritmet asimetrike me rritjen e gjatesise se celesit rritet veshtiresia e faktorizimit te tyre"],
+     "context_set": ""
+    },
+    {"tag": "rsa-encryption",
+     "patterns": ["cila eshte formula e ekriptimit te RSA", "a mund te me tregsh formulen e enkriptimit te RSA"],
+     "responses": ["c=m^e mod n", "Ajo eshte: c=m^e mod n"],
+     "context_set": ""
+    },
+    {"tag": "rsa-decryption",
+     "patterns": ["cila eshte formula e dekriptimit te RSA", "a mund te me tregsh formulen e dekriptimit te RSA"],
+     "responses": ["Ajo eshte: m=c^d mod n.", "m=c^d mod n"],
+     "context_set": ""
+    },
+    {"tag": "pgp",
+     "patterns": ["çfare eshte pgp", "qfare eshte pgp", "cfare eshte pgp", "A mund te elaborosh se cfare eshte PGP","cka eshte pgp","çka eshte pgp"],
+     "responses": ["PGP apo Pretty Good Privacy eshte forme e enkriptimit per nenshkrim digjital, enkriptim/dekriptim te files, email-ave etj.", "PGP apo 'Pretty Good Privacy,' eshte nje nga format me dominante te end-to-end enkriptimit."],
+     "context_set": ""
+    },
+    {"tag": "hash",
+     "patterns": ["çfare jane hash funkstionet", "qfare jane hash funkstionet", "cfare jane hash funkstionet", "cka jane hash funkstionet", "çka jane hash funkstionet"],
+     "responses": ["Jane funksionet nje kahore te cilat mapojne te dhenat e nje madhesia arbitrare ne vlera te nje madhesie fikse", "Hash funksionet jane funksione qe perdoren per mapimin e te dhenave ne vlera te nje madhesie fikse"],
+     "context_set": ""
+    },
+    {"tag": "one-way-function",
+     "patterns": ["cilat jane vetite e funksioneve nje kahore?", "permend ndonje veti te funksioneve nje kahore","cilat jane vetite e funksioneve njekahore?", "permend ndonje veti te funksioneve njekahore"],
+     "responses": ["Hmm, eshte e veshtire qe ti kalkulohet funksioni invers i tyre, dhe jane 'collision resistant'.", "Jane 'collision resistant' dhe eshte veshtire qe te llogaritet funksioni invers i tyre"],
+     "context_set": ""
+    },
+    {"tag": "salted-hash",
+     "patterns": ["Si ruhen fjalekalimet ne nje databaze", "Si duhet te ruhen fjalekalimet ne nje databaze", "Ne cfare menyre duhet ruajtur fjalekalimet ne databaze"],
+     "responses": ["Ato duhet te ruhen si Salted Password Hash ", "Duhet te perdoren Salted Password Hashes"],
+     "context_set": ""
+    },
+    {"tag": "XSS",
+     "patterns": ["çfare eshte cross site scripting", "qfare eshte cross site scripting", "cka eshte cross site scripting","çka eshte cross site scripting", "cfare eshte cross site scripting","cka jane XSS sulmet", "çka jane XSS sulmet"],
+     "responses": ["XSS jane sulmet te cilat kryhen permes injektimit te skriptave qellimkeqe ne web faqe te ndryshme", "Paraqesin tipe te injection sulmeve, qe kryhen permes injektimin e skriptave qellimkeqe ne website zakonisht te besueshme"],
+     "context_set": ""
+    },
+    {"tag": "sql-injections",
+     "patterns": ["Si i parandalojme sql injections?", "Cka duhet bere per parandalim te sql injections?", "ne cfare menyre i parandalojme sql injections"],
+     "responses": ["I parandalojme duke bere escape inputet, duke perdorur parameterized statements etj. ", "Parandalohen duke perdorur parameterized statements, duke bere escape inputet etj."],
+     "context_set": ""
+    },
+    {"tag": "iv",
+     "patterns": ["pse perdoret IV apo initial vector ne CBC modin?", "cili eshte roli i IV apo initial vector ne modin cbc"],
+     "responses": ["Sepse initial vektori ben qe blloku i enkriptuar te jete unik", "Initial vektori ben qe blloqet e enkriptuara te jene unike"],
+     "context_set": ""
+    },
+    {"tag": "des",
+     "patterns": ["çfare eshte des apo data encryption standard", "qfare eshte des apo data encryption standard", "cka eshte des apo data encryption standard","çka eshte des apo data encryption standard", "cfare eshte des apo data encryption standard"],
+     "responses": ["Eshte nje algoritem simetrik i enkriptimit te te dhenave, me gjatesi te celesit prej 56 bit", "DES eshte nje algoritem simetrik i enkriptimit me gjatesi te celesit prej 56 bit."],
+     "context_set": ""
+    },
+    {"tag": "aes",
+     "patterns": ["çfare eshte aes apo advanced encryption standard", "qfare eshte aes apo advanced encryption standard", "cka eshte aes apo advanced encryption standard","çka eshte aes apo advanced encryption standard", "cfare eshte aes apo advanced encryption standard"],
+     "responses": ["AES eshte nje block cipher simetrik me gjatesi te celesit prej 128, 192, dhe 256 bit", "AES eshte nje algoritem simetrik i enkriptimit qe mbeshtet bllokun e enkriptimit prej 128 bit, dhe gjatesite e celesit prej 128, 192, dhe 256 bit"],
+     "context_set": ""
+    },
+    {"tag": "des-key",
+     "patterns": ["sa mund te jete gjatesia e celesit tek des apo data encryption standard", "gjatesia e celesit tek des apo data encryption?"],
+     "responses": ["128, 192, dhe 256 bit", "Mund te jete 128, 192, dhe 256 bit."],
+     "context_set": ""
+    },
+    {"tag": "diffie-hellman",
+     "patterns": ["çfare eshte dhm apo diffie hellman", "qfare eshte dhm apo diffie hellman", "cka eshte dhm apo diffie hellman","çka eshte dhm apo diffie hellman", "cfare eshte dhm apo diffie hellman"],
+     "responses": ["Paraqet nje metode te shkembimit te sigurte te celesave permes nje kanali publik ", "Perdoret per shkembimin e celesave permes nje kanali publik"],
+     "context_set": ""
+    }
+]
+}
