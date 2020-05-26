@@ -1,3 +1,4 @@
+from tensorflow import keras
 import json
 import numpy
 from sklearn.feature_extraction.text import CountVectorizer
@@ -53,15 +54,12 @@ def generate_data(data, lang):
     input_y = labels_matrix.todense()
     input_y = numpy.array(input_y)
 
-
-
     # Convert pattern_vocab values to integers and save it as a json file
     for key in pattern_vocab:
         pattern_vocab[key] = int(pattern_vocab[key])
 
     with open('data/'+lang+'_pattern_vocab.json', 'w') as file:
         json.dump(pattern_vocab, file)
-
 
     # Separate labels_vocab keys, sort them and save it to a json file
     for key in labels_vocab:
@@ -75,7 +73,19 @@ def generate_data(data, lang):
     return labels_dict, pattern_vocab, input_x, input_y
 
 
+def create_model(training, output):
 
+    model = keras.Sequential()
+    model.add(keras.layers.Dense(8, input_shape=(len(training[0]),)))
+    model.add(keras.layers.Dense(8))
+    model.add(keras.layers.Dense(len(output[0]), activation='softmax'))
+
+    model.compile(optimizer='adam',
+                  loss='categorical_crossentropy',
+                  metrics=['accuracy'])
+
+    model.summary()
+    return model
 
 
 lang = input("\n Select language (english or albanian): ")
@@ -86,5 +96,9 @@ with open('conversation_dataset/'+lang+'_dataset.json') as file:
 
 try:
     labels_dict, pattern_vocab = load_data(dataset, lang)
+    loaded_model = keras.models.load_model("keras_models/"+lang+"_model.h5")
 except:
     labels_dict, pattern_vocab, input_x, input_y = generate_data(dataset, lang)
+    model = create_model(input_x, input_y)
+    model.fit(input_x, input_y, epochs=500, batch_size=8)
+    model.save("keras_models/"+lang+"_model.h5")
