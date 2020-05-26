@@ -35,14 +35,6 @@
      "patterns": ["Im not good", "Hanging on", "Im not doing great"],
      "responses": ["Why, whats wrong?", "What's wrong?","Can I help you somehow?"]
     },
-    {"tag": "camera",
-     "patterns": ["can you turn the camera on", "why isn't your camera on", "could you please turn on your camera","I can not see you","I can't see you"],
-     "responses": ["Sorry, but my camera isn't working.", "Unfourtunately my camera isn't working.","Something is wrong with my camera, sorry.","The camera on my device is broken."]
-    },
-    {"tag": "microphone",
-     "patterns": ["can you turn the microphone on", "why isn't your audio on", "could you please turn on your microphone","why are you muted","I can not hear you","i can't hear you"],
-     "responses": ["Something is wrong with my microphone! I can't turn it on!", "The mic is broken!","Im sorry but the mic on this device is broken","Sorry, I can't seem to make the mic work."]
-    },
     {"tag": "cyber-security",
      "patterns": ["what is cyber security", "are you familiar with cyber security"],
      "responses": ["It is the protection of computer systems and networks from the theft of or damage to hardware or software.", "Cybersecurity is the practice of protecting systems, networks, and programs from attacks."]
